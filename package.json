@@ -1,9 +1,9 @@
 {
-  "name": "Sigma bot",
+  "name": "yelowyr",
   "version": "14.11.0",
   "description": "Sigma bot",
   "scripts": {
-    "start": "node index.js"
+    "start": "node ."
   },
   "dependencies": {
     "@discordjs/rest": "^1.7.1",
