@@ -1,5 +1,5 @@
 module.exports = {
-  token: process.env.TOKEN, // main bot token
+  token: 'MTQzOTQ3ODQ1MTQwODIxMjEwMg.GVlsDo.S8_E5zAjp4RTksWgQQHKfTxPO12MlNNZSH9mLI', // main bot token
   betatoken: '', // beta token
   id: process.env.CLIENT_ID, // main bot id
   betaID: '', // beta id
