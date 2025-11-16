@@ -3,7 +3,7 @@ const http = require('http');
 http.createServer((req, res) => {
     re.write('OK');
     res.end();
-}).listen(process.env.PORT || 3000);
+}).listen(process.env.PORT);
 
 const { Sigma } = require('./src/structures/bot.js');
 const client = new Sigma();
