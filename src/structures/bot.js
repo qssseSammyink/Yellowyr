@@ -3,7 +3,6 @@ const config = require('../config.js');
 const Database = require('../utils/Database.js');
 const { Slash, Events, Button, Modal }  = require('../handlers/handle.js');
 
-
 module.exports = {
     Sigma: class Sigma extends Client {
         constructor() {
