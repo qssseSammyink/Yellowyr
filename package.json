@@ -1,11 +1,14 @@
 {
   "name": "yelowyr",
+  "private": true,
   "version": "14.11.0",
   "description": "Sigma bot",
+  "license": "MIT",
   "scripts": {
     "start": "node ."
   },
   "dependencies": {
+    "@discord-player/extractor": "^7.1.0",
     "@discordjs/rest": "^1.7.1",
     "@ffmpeg-installer/ffmpeg": "^1.1.0",
     "ascii-table": "^0.0.9",
