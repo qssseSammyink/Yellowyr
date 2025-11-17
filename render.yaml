@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: yellowyr-bot
+    env: node
+    plan: free
+    branch: main
+    buildCommand: "npm install"
+    startCommand: "node ."
+    autoDeploy: true
+    envVars:
+      - key: TOKEN
+        value: "YOUR_DISCORD_BOT_TOKEN"
+        fromDatabase: false
+      - key: CLIENT_ID
+        value: "YOUR_DISCORD_CLIENT_ID"
+        fromDatabase: false
+      # Adicione aqui outras variáveis que seu bot use, ex: MONGO_URI, PREFIX, etc.
