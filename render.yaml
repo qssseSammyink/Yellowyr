@@ -2,16 +2,17 @@ services:
   - type: web
     name: yellowyr-bot
     env: node
-    plan: free
+    plan: free          # ou starter para uptime 24/7 sem sleep
     branch: main
     buildCommand: "npm install"
     startCommand: "node ."
     autoDeploy: true
     envVars:
       - key: TOKEN
-        value: "YOUR_DISCORD_BOT_TOKEN"
-        fromDatabase: false
+        value: "SEU_DISCORD_TOKEN"
       - key: CLIENT_ID
-        value: "YOUR_DISCORD_CLIENT_ID"
-        fromDatabase: false
-      # Adicione aqui outras variáveis que seu bot use, ex: MONGO_URI, PREFIX, etc.
+        value: "SEU_DISCORD_CLIENT_ID"
+      - key: MONGO_URI
+        value: "SUA_MONGO_URI"
+      - key: PREFIX
+        value: "!"
